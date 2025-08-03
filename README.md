@@ -198,9 +198,9 @@ The application will be available at:
 ## Contributing
 
 1. Fork the repository
-2. Create a feature branch: `git checkout -b feature-name`
-3. Make your changes and commit: `git commit -m 'Add feature'`
-4. Push to the branch: `git push origin feature-name`
+2. Create a feature branch: `git checkout -b add-user-notifications`
+3. Make your changes and commit: `git commit -m 'Add user notification system'`
+4. Push to the branch: `git push origin add-user-notifications`
 5. Submit a pull request
 
 ## License
