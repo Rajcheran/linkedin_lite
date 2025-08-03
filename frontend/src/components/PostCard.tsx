@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Post } from '../types';
+import { Post, Comment } from '../types';
 import { useAuth } from '../context/AuthContext';
 import { postsAPI } from '../services/api';
 
@@ -15,7 +15,7 @@ const PostCard: React.FC<PostCardProps> = ({ post, onPostUpdate }) => {
   const [isLiked, setIsLiked] = useState(post.likes.includes(user?.id || ''));
   const [showComments, setShowComments] = useState(false);
   const [comment, setComment] = useState('');
-  const [comments, setComments] = useState(post.comments);
+  const [comments, setComments] = useState<Comment[]>(post.comments);
   const [loading, setLoading] = useState(false);
 
   const formatDate = (dateString: string) => {
